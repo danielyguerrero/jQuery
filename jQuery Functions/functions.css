@@ -1,0 +1,23 @@
+html, body {
+	padding:0px;
+	margin:0px;
+}
+.wrapper{
+	height: auto;
+	width: auto;
+	text-align: center;
+	background: linear-gradient(#a29c9c, white);
+}
+h1{
+	margin:0px 0px 20px 0px;
+	padding-top: 10px;
+}
+.box{
+	background-color: #8282d9;
+	height: 200px;
+	width: 200px;
+	display: inline-block;
+	vertical-align: top;
+	padding:5px;
+	margin:10px;
+}
