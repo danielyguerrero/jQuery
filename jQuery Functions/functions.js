@@ -62,6 +62,19 @@ $(document).ready(function(){
 			$('#next').toggle();
 		});
 	});
+//=================   CSS     ==========================
+
+	$('.rectangle1 button:nth-of-type(1)').click(function(){
+		var colors = ['yellow', 'red', 'blue', 'purple'];
+		var random_color = colors[Math.floor(Math.random() * colors.length)]; 
+		$('.rectangle1').css({"background-color": random_color});
+	})
+
+//=================   CSS     ==========================
+
+	$('.rectangle2 button:nth-of-type(1)').click(function(){
+		$('.rectangle2').css({"border-radius":"100px"})
+	})
 
 });
 

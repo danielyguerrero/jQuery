@@ -39,7 +39,7 @@ button{
 	font-size: 16px;
 }
 /*=====================================*/
- #rectangle { 
+ .rectangle1, .rectangle2 { 
  	width: 400px; 
  	height: 200px; 
  	background: #6ed07a;
