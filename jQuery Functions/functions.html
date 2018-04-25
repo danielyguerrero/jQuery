@@ -12,45 +12,77 @@
 <body>
 	<div class="wrapper">
 		<h1>
-			Welcome, below are jQuery Functions @ work!
+			Welcome, below are jQuery <br> Functions @ work!
 		</h1> 
 		<p>
 			<button type="button" class="btn btn-danger" id="notouchy">
 				Do not click this button
 			</button>
 		</p>
+<!-- ==============     HIDE     ================ -->
 		<div class="box" id="hidediv" >
-			<h2>Hide Me</h2>
-			<p>Click Here</p>
+			<br> <br>
+			<h2>Click this box to hide it</h2>
 		</div>
+<!-- ==============     SHOW     ================ -->
 		<div class="box" id="showdiv">
-			<p id="where" hidden>Where did last box go?</p>
+			<p id="where" hidden="true" class="hidpar">
+				Where did last box go?
+			</p>
 			<h2>Show the box again</h2>
 			<button>Click Me</button>
 		</div>
+<!-- ==============    TOGGLE   ================ -->
 		<div class="box" id="togglediv">
 			<h2>Toggle this paragragh</h2>
 			<button>Click Me</button>
-			<p id="again"hidden>Click button again</p>
+			<p id="again" hidden="true" class="hidpar">
+				Click button again
+			</p>
 		</div>
+<!-- ==============   SLIDEUP   ================ -->
 		<div class="box" id="slideupdiv">
 			<h2>Slide this paragraph up</h2>
 			<button>Click Me</button>
+			<p id="help" hidden="true" class="hidpar">
+				Next box can help
+			</p>
 		</div>
+<!-- ==============   SLIDEDOWN  ================ -->
 		<div class="box" id="slidedowndiv">
 			<h2>Slide previous paragraph down</h2>
 			<button>Click Me</button>
 		</div>
+<!-- ==============  SLIDETOGGLE ================ -->
 		<div class="box" id="slidetogglediv">
 			<h2>Slide Toggle</h2>
 			<button>Click Me</button>
+			<p id="twice" hidden="true" class="hidpar">
+				Click again
+			</p>
 		</div>
+<!-- ==============   FADEPOUT   ================ -->
 		<div class="box" id="fadeoutdiv">
 			<h2>Fade this paragraph out</h2>
 			<button>Click Me</button>
+			<p id="next" hidden="true" class="hidpar">
+				The next box can help!
+			</p>
 		</div>
+<!-- ==============     FADEIN   ================ -->
 		<div class="box" id="fadeindiv">
 			<h2>Fade previous paragrah in</h2>
+			<button>Click Me</button>
+		</div>
+<!-- ============================================== -->
+<!-- ==============    BOTTOM DIV    ============== -->
+<!-- ============================================== -->
+		<div id="rectangle">
+			<h2></h2>
+			<button>Click Me</button>
+		</div>
+		<div id="rectangle">
+			<h2></h2>
 			<button>Click Me</button>
 		</div>
 	</div>

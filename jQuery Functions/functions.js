@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 //=================   Danger Button    =================
 	$('#notouchy').click(function(){
-		alert('I said DO NOT CLICK THE BUTTON')
+		alert('I said "No clicky!')
 	});
 //=================   Hide     ==========================
 
@@ -21,36 +21,46 @@ $(document).ready(function(){
 	});
 //=================   Toggle     =========================
 	$('#togglediv button:nth-of-type(1)').click(function(){
-		$('#togglediv h2').toggle(1000, function(){
-			$('#again').toggle(1000);
+		$('#togglediv h2').toggle(function(){
+			$('#again').toggle();
 		});
 	});	
 
 //=================   Slideup     ========================
 	$('#slideupdiv button:nth-of-type(1)').click(function(){
-		$('#slideupdiv h2:nth-of-type(1)').slideUp();
+		$('#slideupdiv h2:nth-of-type(1)').slideUp(function(){
+			$('#help').toggle();
+		});
 	});
 
 //=================   Slidedown     ======================
 	
 	$('#slidedowndiv button').click(function(){
-		$('#slideupdiv h2:nth-of-type(1)').slideDown();
+		$('#slideupdiv h2:nth-of-type(1)').slideDown(function(){
+			$('#help').toggle();
+		});
 	});
 //=================   SlideToggle     ======================
 
 	$('#slidetogglediv button:nth-of-type(1)').click(function(){
-		$('#slidetogglediv h2:nth-of-type(1)').slideToggle();
+		$('#slidetogglediv h2:nth-of-type(1)').slideToggle(function(){
+			$('#twice').toggle();
+		});
 	});
 //=================   FadeOut     ==========================
 
 	$('#fadeoutdiv button:nth-of-type(1)').click(function(){
-		$('#fadeoutdiv h2:nth-of-type(1)').fadeOut();
+		$('#fadeoutdiv h2:nth-of-type(1)').fadeOut(function(){
+			$('#next').toggle();
+		});
 	});
 
 //=================   FadeIn     ==========================
 
 	$('#fadeindiv button:nth-of-type(1)').click(function(){
-		$('#fadeoutdiv h2:nth-of-type(1)').fadeIn();
+		$('#fadeoutdiv h2:nth-of-type(1)').fadeIn(function(){
+			$('#next').toggle();
+		});
 	});
 
 });
