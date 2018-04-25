@@ -12,6 +12,13 @@ h1{
 	margin:0px 0px 20px 0px;
 	padding-top: 10px;
 }
+#where{
+	font-size: 26px;
+color: red;
+font-weight: bold;
+text-shadow: 1px 1px #000;
+margin: 0px;
+}
 .box{
 	background-color: #8282d9;
 	height: 200px;

@@ -6,19 +6,25 @@ $(document).ready(function(){
 	});
 //=================   Hide     ==========================
 
-	$('#hidediv button:nth-of-type(1)').click(function(){
-		$('h1').hide();
+	$('#hidediv').click(function(){
+		$(this).hide(1000, function(){
+			$('#where').show();
+		});
 	});
 
 //=================   Show     ==========================
 
 	$('#showdiv button:nth-of-type(1)').click(function(){
-		$('h1').show();
+		$('#hidediv').show(1000, function(){
+			$('#where').hide();
+		});
 	});
 //=================   Toggle     =========================
 	$('#togglediv button:nth-of-type(1)').click(function(){
-		$('#togglediv h2:nth-of-type(1)').toggle();
-	});
+		$('#togglediv h2').toggle(1000, function(){
+			$('#again').toggle(1000);
+		});
+	});	
 
 //=================   Slideup     ========================
 	$('#slideupdiv button:nth-of-type(1)').click(function(){
@@ -27,7 +33,7 @@ $(document).ready(function(){
 
 //=================   Slidedown     ======================
 	
-	$('#slidedowndiv button:nth-of-type(1)').click(function(){
+	$('#slidedowndiv button').click(function(){
 		$('#slideupdiv h2:nth-of-type(1)').slideDown();
 	});
 //=================   SlideToggle     ======================
